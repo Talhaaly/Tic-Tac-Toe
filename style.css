@@ -1,0 +1,75 @@
+/* import font family  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap');
+
+
+/* universal Selector USe  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navBar  */
+
+nav {
+    background-color: rgb(46, 1, 46);
+    color: rgb(240, 237, 237);
+    padding: 25px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+/* ul list  */
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Game-Container  */
+
+.gameContainer {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* container  */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Playpen Sans', cursive;
+}
+
+/* container Div  */
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* box hover  */
+
+.box:hover {
+    background-color: rgb(221, 163, 233);
+}
+
+/* gameInfo  */
+
+.gameInfo {
+    padding: 0 34px;
+    font-family: 'Baloo Da 2', sans-serif;
+}
+
+/* image Box  */
+
+.imgBox img {
+    display: none;
+}
