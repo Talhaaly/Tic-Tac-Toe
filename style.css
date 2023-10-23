@@ -16,7 +16,7 @@
 nav {
     background-color: rgb(46, 1, 46);
     color: rgb(240, 237, 237);
-    padding: 25px;
+    padding: 20px;
     font-family: 'Playpen Sans', cursive;
 }
 
@@ -24,6 +24,8 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    gap: 5px;
 }
 
 /* Game-Container  */
@@ -68,6 +70,15 @@ nav ul {
     font-family: 'Baloo Da 2', sans-serif;
 }
 
+/* line  */
+
+.line {
+    background-color: rgb(196, 0, 0);
+    height: 3px;
+    width: 30vw;
+    position: absolute;
+}
+
 /* image Box  */
 
 .imgBox img {
@@ -105,3 +116,24 @@ nav ul {
     color: whitesmoke;
     font-size: large;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+    .gameInfo {
+        margin-top: 35px;
+    }
+
+    .gameInfo  h1 {
+        font-size: 1.5rem;
+    }
+
+    .container{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
+
