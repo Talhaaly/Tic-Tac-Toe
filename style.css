@@ -44,6 +44,7 @@ nav ul {
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
     font-family: 'Playpen Sans', cursive;
+    position: relative;
 }
 
 /* container Div  */
@@ -75,8 +76,9 @@ nav ul {
 .line {
     background-color: rgb(196, 0, 0);
     height: 3px;
-    width: 30vw;
+    width: 0;
     position: absolute;
+    transition: width 1s ease-in-out;
 }
 
 /* image Box  */
