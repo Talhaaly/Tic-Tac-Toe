@@ -71,7 +71,8 @@ nav ul {
 /* image Box  */
 
 .imgBox img {
-    display: none;
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 
 
@@ -88,4 +89,19 @@ nav ul {
 }
 .bb-0{
     border-bottom: 0;
+}
+
+/* button  */
+
+#reset {
+    padding: 8px;
+    background-color: rgb(241, 231, 245);
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+
+#reset:hover{
+    background-color: purple;
+    color: whitesmoke;
+    font-size: large;
 }

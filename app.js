@@ -30,6 +30,7 @@ wins.forEach(e => {
     if((boxTexts[e[0]].innerText === boxTexts[e[1]].innerText && (boxTexts[e[1]].innerText === boxTexts[e[2]].innerText)) && (boxTexts[e[0]].innerText !== '') ){
         document.querySelector('.info').innerText = boxTexts[e[0]].innerText + " " + "won"
         isgameover = true;
+        document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = "200px"
     }
 })
 }
@@ -51,4 +52,17 @@ Array.from(boxes).forEach(element =>{
             }
         }
     })
+})
+
+
+// Add Listener onclock reset button
+reset.addEventListener('click', () =>{
+    let boxText = document.querySelectorAll('.boxText');
+    Array.from(boxText) .forEach(element => {
+        element.innerText = ""
+    });
+    turns = "X"
+    isgameover = false;
+    document.getElementsByClassName('info')[0].innerText = "Turn For" + turns;
+    document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = "0px"
 })
